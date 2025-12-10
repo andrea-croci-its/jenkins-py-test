@@ -7,4 +7,4 @@ except:
 
 tabellina = [x*NUMERO for x in range(1,11)]
 
-[print(f"{indice+1:>2}: {n}") for indice, n in enumerate(tabellina)]
+[print(f"{i:>2}: {i} x {NUMERO} = {n}") for i, n in enumerate(tabellina)]
