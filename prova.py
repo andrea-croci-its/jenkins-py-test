@@ -1,3 +1,10 @@
-tabellina = [x*2 for x in range(1,11)]
-output = "Hello World! Hello World! Hello World!"
-[print(f"{n:>2}: {output[:n]}") for n in tabellina]
+import sys
+
+try:
+  NUMERO = int(sys.argv[1])
+except:
+  NUMERO = 2
+
+tabellina = [x*NUMERO for x in range(1,11)]
+
+[print(f"{indice:>2}: {n}") for n, indice in enumerate(tabellina)]
